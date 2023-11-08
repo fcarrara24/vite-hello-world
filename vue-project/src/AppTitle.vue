@@ -2,16 +2,21 @@
   <div>
     <h1 class="mainTitle">{{ title }}</h1>
   </div>
+  <AppHero/>
 </template>
 
 <script>
-export default {
-  setup () {
-    
+import AppHero from './components/AppHero.vue';
 
+export default {
+  data () {
+    
     return {
       title: "La mia prima app con Vite!"
     }
+  },
+  components:{
+    AppHero
   }
 }
 </script>
