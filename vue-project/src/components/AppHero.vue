@@ -1,20 +1,47 @@
 <template>
     <main>
-        <h2 class="heroStyle">{{ titolo }}</h2>
+        <div class="outer-container">
+            <div v-for="number in 9" class="img-container">
+                <img :src="'../public/img/cianfry-'+number+'.jpg'" alt="" srcset="">
+            </div>
+        </div>
     </main>
 </template>
 
 <script>
 export default {
     name: 'AppHero',
-    setup () {
+    data () {
         return {
-            titolo: 'jumbotron'
+            titolo: 'jumbotron',
+            
         }
-    }
+    },
+    
 }
 </script>
 
 <style lang="css" scoped >
+    .img-container{
+        width: calc(100%/9);
+    }
+    img{
+        max-width: 100%;
+    }
 
+    .outer-container{
+        justify-content: center;
+        width: 100vw;
+        max-width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    main{
+        padding: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        overflow-x: hidden;
+    }
 </style>
