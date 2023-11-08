@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>working</h1>
+    <h1 class="mainTitle">{{ title }}</h1>
   </div>
 </template>
 
@@ -10,12 +10,16 @@ export default {
     
 
     return {
-      
+      title: "La mia prima app con Vite!"
     }
   }
 }
 </script>
 
-<style lang="scss" scoped>
-
+<style lang="css" scoped>
+  .mainTitle{
+    color: red;
+    text-align: center;
+    padding-top: 12px;
+  }
 </style>
