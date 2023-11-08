@@ -3,8 +3,6 @@
     <h1 class="mainTitle">{{ title }}</h1>
   </div>
   <AppHero/>
-  <AppHero/>
-
 </template>
 
 <script>

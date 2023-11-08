@@ -2,7 +2,7 @@
     <main>
         <div class="outer-container">
             <div v-for="number in 9" class="img-container">
-                <img :src="'../public/img/cianfry-'+number+'.jpg'" alt="" srcset="">
+                <img :src="'/img/cianfry-'+number+'.jpg'" alt="" srcset="">
             </div>
         </div>
     </main>
